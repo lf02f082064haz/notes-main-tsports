@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>江南体育 · 运动生活新节奏</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #fafafa;
+      color: #222;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2.4rem 1.6rem 3rem;
+    }
+
+    /* hero 区 */
+    .hero {
+      margin: 1.8rem 0 3rem;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 550;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 0.6rem;
+    }
+    .hero .sub {
+      font-size: 1.1rem;
+      color: #5a5a5a;
+      max-width: 28em;
+      border-left: 3px solid #2b8a3e;
+      padding-left: 1.2rem;
+      margin-top: 0.4rem;
+    }
+
+    /* 通用章节 */
+    section {
+      margin: 2.8rem 0;
+    }
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 560;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.2rem;
+      display: inline-block;
+      border-bottom: 2px solid #d6d6d6;
+      padding-bottom: 0.3rem;
+    }
+    p {
+      margin-bottom: 0.9rem;
+    }
+    a {
+      color: #1a6b2e;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    a:hover {
+      border-bottom-color: #1a6b2e;
+    }
+
+    /* 特点卡片 */
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin-top: 1rem;
+    }
+    .feature-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 1.2rem 1rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.03), 0 4px 10px rgba(0,0,0,0.02);
+      transition: transform 0.15s, box-shadow 0.2s;
+      border: 1px solid #efefef;
+    }
+    .feature-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.04);
+    }
+    .feature-card strong {
+      display: block;
+      font-weight: 560;
+      margin-bottom: 0.2rem;
+      font-size: 1.05rem;
+    }
+    .feature-card span {
+      font-size: 0.95rem;
+      color: #4a4a4a;
+    }
+
+    /* 说明区 */
+    .explain-block {
+      background: #f3f7f3;
+      border-radius: 18px;
+      padding: 1.6rem 1.6rem 1.8rem;
+      margin: 2.2rem 0;
+    }
+
+    /* FAQ 摘要 */
+    .faq-summary {
+      margin-top: 2rem;
+    }
+    .faq-item {
+      border-bottom: 1px solid #e0e0e0;
+      padding: 0.9rem 0;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-q {
+      font-weight: 520;
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+    }
+    .faq-a {
+      font-size: 0.92rem;
+      color: #4f4f4f;
+    }
+
+    /* 底部 */
+    .site-footer {
+      margin-top: 3.2rem;
+      padding-top: 1.6rem;
+      border-top: 1px solid #dcdcdc;
+      font-size: 0.85rem;
+      color: #5e5e5e;
+    }
+    .site-footer p {
+      margin-bottom: 0.3rem;
+    }
+
+    /* 响应式 */
+    @media (max-width: 500px) {
+      .page-wrap { padding: 1.6rem 1.2rem 2.4rem; }
+      .hero h1 { font-size: 1.9rem; }
+      .features-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>在节奏里找到自己</h1>
+    <div class="sub">日常运动中，身体会告诉你答案 —— 江南体育</div>
+  </div>
+
+  <!-- 简短介绍 / 理念 -->
+  <section>
+    <div class="section-title">关于这个空间</div>
+    <p>
+      无论你刚踏上跑道，还是已经习惯每日流汗，运动带来的踏实感总是相通的。
+      <a href="https://cns-jnsport.com">江南体育</a>
+      希望成为你日常训练与放松之间的一个安静参照 —— 不喧哗，不追赶，只提供清晰的信息和真诚的内容。
+    </p>
+    <p>
+      这里不堆砌术语，也不制造焦虑。我们相信，运动的本质是持续的微小积累，以及每次伸展时感受到的稳定与自由。
+    </p>
+  </section>
+
+  <!-- 优势区 – 卡片 -->
+  <section>
+    <div class="section-title">为什么持续关注</div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <strong>内容节奏</strong>
+        <span>训练思路、恢复建议、运动心理 —— 每周更新，不刷屏。</span>
+      </div>
+      <div class="feature-card">
+        <strong>实用导向</strong>
+        <span>技巧拆解和常见误区，帮你省下试错的时间。</span>
+      </div>
+      <div class="feature-card">
+        <strong>真实场景</strong>
+        <span>来自普通运动者的经验，而非完美滤镜下的表演。</span>
+      </div>
+      <div class="feature-card">
+        <strong>安静陪伴</strong>
+        <span>没有浮夸的标题，只有适合慢慢翻阅的内容。</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 说明区 + 场景 -->
+  <div class="explain-block">
+    <div class="section-title" style="border-bottom-color: #b3cbb3;">运动中的平衡感</div>
+    <p>
+      无论你喜欢晨跑、游泳、骑行还是力量训练，身体的适应都需要一个温和的过程。
+      通过 <a href="https://cns-jnsport.com">江南体育</a> 你能够读到不同运动项目中的实用细节，比如如何调整呼吸、如何选择基础装备、如何避免常见的劳损。
+    </p>
+    <p>
+      我们更关注运动如何融入生活，而不是让生活被运动绑架。
+      一场半小时的快走、一次专注的拉伸，都比计划外的过度训练更有价值。
+    </p>
+    <p style="margin-bottom:0;">
+      如果你正在寻找一个不贩卖焦虑、不鼓吹极限的运动内容平台，这里或许合适。
+    </p>
+  </div>
+
+  <!-- FAQ 摘要 -->
+  <section class="faq-summary">
+    <div class="section-title">你可能想知道的</div>
+    <div class="faq-item">
+      <div class="faq-q">内容适合完全新手吗？</div>
+      <div class="faq-a">是的。大部分文章从基础出发，也包含进阶视角，你可以按自己的节奏选择阅读。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">是否需要付费？</div>
+      <div class="faq-a">目前所有内容均免费浏览，未来若有增值服务会提前说明。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">平台有社群或讨论区吗？</div>
+      <div class="faq-a">暂时以内容输出为主。你可以通过网站留言或邮件交流，我们定期回复。</div>
+    </div>
+  </section>
+
+  <!-- 底部链接 -->
+  <footer class="site-footer">
+    <p>了解更多运动思路与日常训练建议，可浏览 <a href="https://cns-jnsport.com">江南体育</a> 更新内容。</p>
+    <p style="margin-top:0.6rem; font-size:0.8rem; color:#7a7a7a;">保持移动，保持观察 —— 不必完美，只要持续。</p>
+  </footer>
+
+</div>
+</body>
+</html>
